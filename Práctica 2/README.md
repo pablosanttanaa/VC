@@ -49,8 +49,7 @@ Estos ejercicios demuestran una variedad de técnicas de procesamiento de imáge
 
 ## Bibliografía
 
-1. [W3Schools - Color Picker](https://www.w3schools.com/colors/colors_picker.asp)
-2. [GeeksforGeeks - OpenCV cv2.imshow Method](https://www.geeksforgeeks.org/python-opencv-cv2-imshow-method/)
-3. [GeeksforGeeks - OpenCV cv2.circle Method](https://www.geeksforgeeks.org/python-opencv-cv2-circle-method/)
-4. [OpenCV Documentation - Drawing Functions](https://docs.opencv.org/4.x/da/d6e/tutorial_py_geometric_transformations.html)
-5. [OpenCV Documentation - VideoCapture Class](https://docs.opencv.org/4.x/da/d6e/tutorial_py_geometric_transformations.html)
+1. [Filtros](https://www.youtube.com/watch?v=R6wgJ6epakU)
+2. [Detectar Cara](https://www.youtube.com/watch?v=1xXjV8uhoJs)
+3. [Umbralización](https://omes-va.com/simple-thresholding/)
+4. [Reduce Method](https://shimat.github.io/opencvsharp_docs/html/7bb05237-7ff6-0e19-bfeb-36ea352b3051.htm)
