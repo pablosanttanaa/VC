@@ -16,11 +16,11 @@ En esta práctica, se realizaron varios ejercicios de procesamiento de imágenes
 
 ## Índice
 
-1. [Cuenta de píxeles blancos por filas](#cuenta)
-2. [Imagen resultado de Sobel](#sobel)
-3. [Imagen resultante de Sobel, 8 bits](#sobel-8-bits)
-4. [Función de un Umbral](#umbral)
-5. [Reinterpretación del procesamiento de imágenes](#procesamiento-de-imagenes)
+1. [Cuenta de píxeles blancos por filas](#cuenta-de-píxeles-blancos-por-filas)
+2. [Imagen resultado de Sobel](#imagen-resultado-de-sobel)
+3. [Imagen resultante de Sobel 8 bits](#imagen-resultado-de-sobel-8-bits)
+4. [Función de un Umbral](#función-de-un-umbral)
+5. [Reinterpretación del procesamiento de imágenes](#reinterpretación-del-procesamiento-de-imágenes)
 6. [Conclusión](#conclusión)
 
 ## Cuenta de píxeles blancos por filas
@@ -31,7 +31,7 @@ Este código procesa la imagen 'mandril.jpg' para contar píxeles blancos en cad
 
 Para esta tarea decidimos utilizar una imagen de un gatito y le añadimos un filtro Gaussiano para quitar el ruido. Calculamos los gradientes horizontal y vertical para detectar bordes. Para finalizar muestramos tres imágenes: gradientes verticales, gradientes horizontales y la combinación de ambos para resaltar los bordes en la imagen.
 
-## Imagen resultante de Sobel, 8 bits
+## Imagen resultante de Sobel 8 bits
 
 En el siguiente apartado procesamos la imagen del gatito, suaviza, detecta bordes y analiza la distribución de píxeles blancos en la imagen. Las gráficas resultantes muestran cómo los bordes están distribuidos en la imagen.
 
