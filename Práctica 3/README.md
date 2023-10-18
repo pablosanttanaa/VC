@@ -26,7 +26,7 @@ En esta práctica, se llevaron a cabo tres ejercicios con el objetivo de extraer
 
 ## Total de monedas
 
-En el siguiente ejercicio, se trataba de sacar una foto que incluyera monedas no solapadas y otro objeto, teníamos que contar la cantidad de monedas que había en la imagen. En nuestro caso, optamos por crear una imagen que contuviera tanto monedas como un billete. A continuación, realizamos las siguientes operaciones:
+En el siguiente ejercicio, se trataba de sacar una foto que incluyera monedas no solapadas y otro objeto, teníamos que contar la cantidad de monedas que había en la imagen. En nuestro caso, optamos por crear una imagen que tuviera tanto monedas como un billete. A continuación, realizamos las siguientes operaciones:
 
 -Convertimos la imagen a formato RGB y la transformamos a escala de grises.
 
@@ -40,7 +40,17 @@ A continuación, se muestra el resultado de la detección de monedas en la image
 
 ## Cantidad de dinero
 
+Para el siguiente apartado cogemos dos imagenes, una que es 'dinero.jpg' que la utilizamos en el anterior ejercicio y otra que es 'Solapadas.jpg' que contiene monedas solapadas y consiste en detectar la moneda de 1€ y una vez clickes, te cuente la cantidad de dinero que hay en la imagen. 
 
+Lo primero que hacemos es convertir la imagen en formato RGB para asegurarnos de que se muestre correctamente y a su vez la convertimos a escala de grises. Detectamos los círculos en la imagen como en el anterior ejercicio. 
+
+Verificamos si se han detectado círculos en la imagen, y si es así, iteramos a través de ellos. Para cada círculo detectado, definimos una Región de Interés (ROI) alrededor del círculo. Calculamos la relación de aspecto del ROI para determinar si se trata de una moneda. Dependiendo del tamaño del radio del círculo, sumamos un valor correspondiente al "total". Las monedas se reconocen según su diámetro aproximado.
+
+Finalmente, redimensionamos la imagen resultante y la mostramos en una ventana de visualización. También hemos implementado una función para manejar clics en la imagen resultante. Al hacer clic en la imagen, se muestra la cantidad total de monedas detectadas en la imagen.
+
+Tenemos que destacar que con la imagen solapada no funciono debido a que el algoritmo HoughCircles no es capaz de dectectar media circuferencias o circuferencias que esten inclinadas.
+
+![Resultado de la Detección de la Moneda de 1€](cantidad_de_dinero.png)
 
 ## Microplásticos
 
