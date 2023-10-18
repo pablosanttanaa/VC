@@ -68,11 +68,8 @@ Para finalizar el ejercicio, lo que hacemos es contarmos las imagenes y clasific
 
 ## Conclusión
 
-
+Estos ejercicios muestran varias técnicas de procesamiento de imágenes. Desde la detección y conteo de monedas en una imagen hasta la clasificación de elementos en imágenes de microplásticos, cada uno de los tres ejercicios demuestra cómo se pueden aplicar métodos y algoritmos de procesamiento de imágenes para propósitos específicos. Estos ejercicios ofrecen una visión completa de cómo abordar diversas tareas de procesamiento de imágenes, desde la detección de objetos hasta la segmentación y clasificación, lo que demuestra la versatilidad y la aplicabilidad de estas técnicas en diferentes contextos y aplicaciones.
 
 ## Bibliografía
 
-1. []()
-2. []()
-3. []()
-4. []()
+1. [Matriz de Confusión](https://pythonguia.com/scikit-aprende-matriz-de-confusion/)
