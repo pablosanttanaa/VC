@@ -1,29 +1,48 @@
 ## Práctica 3. Detección de formas
 
-### Contenidos
+En esta práctica, se llevaron a cabo tres ejercicios con el objetivo de extraer información geométrica de los objetos presentes en una imagen. Para el último ejercicio, tuvimos que instalar dos librerías. Una de ellas es "seaborn", la cual se utiliza para la visualización de datos y está construida sobre Matplotlib. La segunda es "scikit-learn", también conocida como "sklearn", cuyo propósito es proporcionar una amplia gama de algoritmos y herramientas para llevar a cabo tareas comunes en el campo del aprendizaje automático.
 
-[Aspectos cubiertos](#31-aspectos-cubiertos)
+## Autores
+[![GitHub](https://img.shields.io/badge/GitHub-Ana%20del%20Carmen%20Santana%20Ojeda-red?style=flat-square&logo=github)](https://github.com/AnaSantana016)
+[![GitHub](https://img.shields.io/badge/GitHub-Pablo%20Santana-blue?style=flat-square&logo=github)](https://github.com/pablosanttanaa)
 
-### 3.1. Aspectos cubiertos
+## Tecnologias
+  -  Python: ![Python](https://img.shields.io/badge/Python-3.x-blue?style=flat-square&logo=python)
 
-En esta práctica el objetivo es extraer información geométrica de los objetos presentes en una imagen. Para ello, se presentan ejemplos haciendo uso de detección de contornos y cálculo de la transformada de Hough para la detección de formas circulares.
-
-En una primera tarea se asume que todos los objetos de interés en la imagen son circulares, en concreto monedas de la UE. Tras mostrar diversas aproximaciones para obtener sus contornos, el reto o tarea consiste en determinar la cantidad de dinero presente en la imagen.  
-
-Para la segunda tarea, se proporcionan tres subimágenes de tres clases de microplásticos recogidos en playas canarias. La tarea propuesta consiste en determinar patrones en sus características geométricas que puedan permitir su clasificación en dichas imágenes y otras. Como fuente de partida, se proporciona enlace al trabajo [SMACC: A System for Microplastics Automatic Counting and Classification](https://doi.org/10.1109/ACCESS.2020.2970498) en el que se adoptan algunas propiedades geométricas para dicho fin. De forma resumida, las características geométricas utilizadas en dicho trabajo fueron:
-
-- Área en píxeles
-- Perímetro en píxeles
-- Compacidad (relación del cuadrado del perímetro con el área)
-- Relación del área con la del contenedor
-- Relación del ancho y el alto del contenedor
-- Relación entre los ejes de la elipse ajustada
-- Definido el centroide, relación entre las distancias menor y mayor al contorno
-
-Si no te quedaras satisfecho con el umbralizado para separar los objetos del fondo, te animo a explorar técnicas de segmentación recientes y potentes como [Segment anything o SAM](https://segment-anything.com), y proyectos extendidos como [FastSAM](https://github.com/CASIA-IVA-Lab/FastSAM) o [Count anything](https://github.com/ylqi/Count-Anything). No dudes en comentar otras alternativas que descubras.
-
-<!---Momentos en trabajo de Nayar sobre Binary images https://cave.cs.columbia.edu/Statics/monographs/Binary%20Images%20FPCV-1-3.pdf -->
+## Librerias 
+  - OpenCV: ![OpenCV](https://img.shields.io/badge/OpenCV-Latest-brightgreen?style=flat-square&logo=opencv)
+  - Matplotlib: ![Matplotlib](https://img.shields.io/badge/Matplotlib-Latest-yellow?style=flat-square&logo=matplotlib)
+  - NumPy: ![NumPy](https://img.shields.io/badge/NumPy-Latest-blueviolet?style=flat-square&logo=numpy)
+  - Seaborn: ![Seaborn](https://img.shields.io/badge/Seaborn-Latest-orange?style=flat-square&logo=seaborn)
+  - scikit-learn (sklearn): ![scikit-learn](https://img.shields.io/badge/scikit--learn-Latest-blue?style=flat-square&logo=scikit-learn)
 
 
-***
-Bajo licencia de Creative Commons Reconocimiento - No Comercial 4.0 Internacional
+## Índice
+
+1. [Total de monedas](#total-de-monedas)
+2. [Cantidad de dinero](#cantidad-de-dinero)
+3. [Microplásticos](#microplásticos)
+4. [Conclusión](#conclusión)
+
+## Total de monedas
+
+
+
+## Cantidad de dinero
+
+
+
+## Microplásticos
+
+
+
+## Conclusión
+
+
+
+## Bibliografía
+
+1. []()
+2. []()
+3. []()
+4. []()
