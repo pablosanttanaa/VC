@@ -54,7 +54,17 @@ Tenemos que destacar que con la imagen solapada no funciono debido a que el algo
 
 ## Microplásticos
 
+En este último ejercicio, consiste en crear una matriz de confusión a raiz de las imagenes de microplásticos. Lo que hacemos es cargar, procesar y mostrar tres imágenes de microplásticos en escala de grises, con el propósito de eliminar las sombras y aplicar un filtro de suavizado a las imágenes.
 
+![Microplásticos](microplasticos.png)
+
+Luego lo que hacemos es segmentar las regiones de interés en las imágenes y resaltar las áreas de mayor interés. Los valores de umbral se han ajustado para lograr la segmentación deseada. 
+
+![Segmentación](segmentacion.png)
+
+Para finalizar el ejercicio, lo que hacemos es contarmos las imagenes y clasificamos elementos en imágenes en tres categorías distintas y visualiza los resultados a través de una matriz de confusión.
+
+![Matriz de Confusión](matriz.png)
 
 ## Conclusión
 
