@@ -26,7 +26,17 @@ En esta práctica, se llevaron a cabo tres ejercicios con el objetivo de extraer
 
 ## Total de monedas
 
+En el siguiente ejercicio, se trataba de sacar una foto que incluyera monedas no solapadas y otro objeto, teníamos que contar la cantidad de monedas que había en la imagen. En nuestro caso, optamos por crear una imagen que contuviera tanto monedas como un billete. A continuación, realizamos las siguientes operaciones:
 
+-Convertimos la imagen a formato RGB y la transformamos a escala de grises.
+
+-Utilizamos el algoritmo HoughCircles de OpenCV para detectar los círculos en la imagen, ajustando parámetros como el valor del gradiente y los radios mínimo y máximo.
+
+-Una vez que el algoritmo reconoce las monedas en la imagen, procedemos a contarlas y devolver el número total de monedas presentes.
+
+A continuación, se muestra el resultado de la detección de monedas en la imagen:
+
+![Resultado de la Detección de Monedas](total_de_monedas.png)
 
 ## Cantidad de dinero
 
