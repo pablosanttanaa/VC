@@ -5,7 +5,7 @@
 [Tarea](#51-tarea)  
 [YOLOv8](#52-yolov8)  
 [OCRs](#53-ocrs)  
-[Entrenando YOLOv8](#54-entrenando-yolov8)
+[Entrenando YOLOv8](#54-entrenando-yolov8)  
 [Incidencias](#55-incidencias)
 
 <!--[YOLOv7](#52-yolov7)  -->
@@ -130,6 +130,19 @@ yolo pose predict model=yolov8n-pose.pt source="rutavideo"
 En las primeras celdas del cuaderno ejemplo, *VC_P5.ipynb*, se incluye un ejemplo de procesamiento y dibujado de las cajas contenedoras haciendo uso del modelo *yolov8n.pt* desde código python. Se presentan todas las clases sin realizar ningún tipo de filtrado. También se incluye una celda preparada para procesar un vídeo en disco pudiendo escoger el modelo.
 
 
+Como apunte final, añadir que Ultralytics integra la posibilidad de realizar [seguimiento (tracking)](https://docs.ultralytics.com/modes/track/#features-at-a-glance) tanto con BoT-SORT como ByteTrack. La última celda del cuaderno antes de los OCRs muestra el código básico para llevarlo a cabo. Mencionar que será necesario instalar *lap*, en mi experiencia, tuve que bajar de versión de python a la 3.9.5, obteniendo un salida como en la imagen:
+
+```
+conda create --name VC_P5 python=3.11.5
+conda activate VC_P5
+pip install ultralytics
+pip install lap
+```
+
+![Segmentación](images/yolov8-tracker.png)  
+*Resultado del BoT-SORT*
+
+Si quieres acceder a vídeos utilizados para evaluar las técnicas de seguimiento, prueba este [enlace](https://motchallenge.net/data/MOT15/).
 
 
 <!--
