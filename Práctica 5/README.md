@@ -13,9 +13,9 @@ Para facilitar la consecución de este propósito, se proporciona un modelo de d
 
 ## Primer detector
 
-- 1. **Carga del Modelo YOLO**: Se carga el modelo YOLO previamente entrenado.
-- 2. **Detección de Vehículos**: Se realiza la detección de objetos en la imagen utilizando YOLO. Si se encuentra un vehículo, se resalta en la imagen original y se muestra la región de interés alrededor del vehículo.
-- 3. **Detección de Matrículas (si se detecta un vehículo)**: Se convierte la región de interés (ROI) alrededor del vehículo a escala de grises y se aplica un umbral. Luego, se buscan los contornos y se filtran aquellos en la mitad inferior de la imagen. Se identifica el contorno más grande, que se asume como la matrícula del vehículo. Se muestra la matrícula y se utiliza Tesseract OCR para reconocer el texto.
+- **Paso 1. Carga del Modelo YOLO**: Se carga el modelo YOLO previamente entrenado.
+- **Paso 2. Detección de Vehículos**: Se realiza la detección de objetos en la imagen utilizando YOLO. Si se encuentra un vehículo, se resalta en la imagen original y se muestra la región de interés alrededor del vehículo.
+- **Paso 3. Detección de Matrículas (si se detecta un vehículo)**: Se convierte la región de interés (ROI) alrededor del vehículo a escala de grises y se aplica un umbral. Luego, se buscan los contornos y se filtran aquellos en la mitad inferior de la imagen. Se identifica el contorno más grande, que se asume como la matrícula del vehículo. Se muestra la matrícula y se utiliza Tesseract OCR para reconocer el texto.
 
 ## Segundo detector
 
