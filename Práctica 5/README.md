@@ -17,54 +17,57 @@ Para facilitar la consecución de este propósito, se proporciona un modelo de d
 - **Paso 2. Detección de Vehículos**: Se realiza la detección de objetos en la imagen utilizando YOLO. Si se encuentra un vehículo, se resalta en la imagen original y se muestra la región de interés alrededor del vehículo.
 - **Paso 3. Detección de Matrículas (si se detecta un vehículo)**: Se convierte la región de interés (ROI) alrededor del vehículo a escala de grises y se aplica un umbral. Luego, se buscan los contornos y se filtran aquellos en la mitad inferior de la imagen. Se identifica el contorno más grande, que se asume como la matrícula del vehículo. Se muestra la matrícula y se utiliza Tesseract OCR para reconocer el texto.
 
+A continuación se adjuntan las figuras del proceso descrito:
+
 <p>&nbsp;</p>
 
+<!-- Filas de dos fotos cada una -->
 <div align="center">
-    <a href="./P5/Readme Images/1.jpg">
-        <img src="./P5/Readme Images/1_thumb.jpg" alt="Imagen 1">
-    </a>
+    <!-- Fila 1 -->
+    <div>
+        <a href="./P5/Readme Images/1.jpg" target="_blank">
+            <img src="./P5/Readme Images/1.jpg" alt="Imagen 1" width="300">
+        </a>
+        <a href="./P5/Readme Images/2.jpg" target="_blank">
+            <img src="./P5/Readme Images/2.jpg" alt="Imagen 2" width="300">
+        </a>
+    </div>
 </div>
 
 <div align="center">
-    <a href="./P5/Readme Images/2.jpg">
-        <img src="./P5/Readme Images/2_thumb.jpg" alt="Imagen 2">
-    </a>
+    <div>
+        <a href="./P5/Readme Images/1.jpg" target="_blank">
+            <img src="./P5/Readme Images/3.jpg" alt="Imagen 1" width="300">
+        </a>
+        <a href="./P5/Readme Images/2.jpg" target="_blank">
+            <img src="./P5/Readme Images/4.jpg" alt="Imagen 2" width="300">
+        </a>
+    </div>
 </div>
 
 <div align="center">
-    <a href="./P5/Readme Images/3.jpg">
-        <img src="./P5/Readme Images/3_thumb.jpg" alt="Imagen 3">
-    </a>
+    <div>
+        <a href="./P5/Readme Images/1.jpg" target="_blank">
+            <img src="./P5/Readme Images/5.jpg" alt="Imagen 1" width="300">
+        </a>
+        <a href="./P5/Readme Images/2.jpg" target="_blank">
+            <img src="./P5/Readme Images/6.jpg" alt="Imagen 2" width="300">
+        </a>
+    </div>
 </div>
-
 <div align="center">
-    <a href="./P5/Readme Images/4.jpg">
-        <img src="./P5/Readme Images/4_thumb.jpg" alt="Imagen 4">
-    </a>
+    <div>
+        <a href="./P5/Readme Images/1.jpg" target="_blank">
+            <img src="./P5/Readme Images/7.jpg" alt="Imagen 1" width="300">
+        </a>
+    </div>
 </div>
-
 <div align="center">
-    <a href="./P5/Readme Images/5.jpg">
-        <img src="./P5/Readme Images/5_thumb.jpg" alt="Imagen 5">
-    </a>
-</div>
-
-<div align="center">
-    <a href="./P5/Readme Images/6.jpg">
-        <img src="./P5/Readme Images/6_thumb.jpg" alt="Imagen 6">
-    </a>
-</div>
-
-<div align="center">
-    <a href="./P5/Readme Images/7.jpg">
-        <img src="./P5/Readme Images/7_thumb.jpg" alt="Imagen 7">
-    </a>
-</div>
-
-<div align="center">
-    <a href="./P5/Readme Images/8.jpg">
-        <img src="./P5/Readme Images/8_thumb.jpg" alt="Imagen 8">
-    </a>
+    <div>
+        <a href="./P5/Readme Images/1.jpg" target="_blank">
+            <img src="./P5/Readme Images/8.jpg" alt="Imagen 1" width="600">
+        </a>
+    </div>
 </div>
 
 ## Segundo detector
