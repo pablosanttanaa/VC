@@ -72,6 +72,39 @@ A continuación se adjuntan las figuras del proceso descrito:
 
 ## Segundo detector
 
+- **Paso 1. Elegimos el Dataset**: Elegimos el dataset de [Roboflow Dataset](https://universe.roboflow.com/itrc/plate-detection-y5). Modificamos el Dataset las carpetas para tener la estructura correcta.
+- **Paso 2. Creamos el fichero plates.yaml**: Nos creamos el fichero con el directorio de nuestro Dataset, número de clase que en nuestro caso solo es una porque es de matrícula y por último el nombre de la clase.
+- **Paso 3. Entrenamiento**: Para entrenar utilizaremos el siguiente comando:
+
+```
+yolo detect train model=yolov8n.pt data=plates.yaml imgsz=640 batch=4 device=CPU epochs=40
+```
+
+<div align="center">
+    <div>
+        <a href="./P5/Readme Images/entrenamiento.jpg" target="_blank">
+            <img src="./P5/Readme Images/entrenamiento.png" alt="Imagen 8" width="600">
+        </a>
+    </div>
+</div>
+
+- **Paso 4. Detectar matrículas**: Para finalizar, solo quedaría utilizar "matricula.pt" en nuestro segundo detector. El segundo detector obtenemos el box que representa la matrícula, marcamos la matrícula del coche y extraemos la matrícula 
+
+<div align="center">
+    <div>
+        <a href="./P5/Readme Images/coche_con_matricula.jpg" target="_blank">
+            <img src="./P5/Readme Images/coche_con_matricula.png" alt="Imagen 9" width="600">
+        </a>
+    </div>
+</div>
+<div align="center">
+    <div>
+        <a href="./P5/Readme Images/matricula.jpg" target="_blank">
+            <img src="./P5/Readme Images/matricula.png" alt="Imagen 10" width="600">
+        </a>
+    </div>
+</div>
+ 
 
 ## Tecnologias
   -  [Python](https://img.shields.io/badge/Python-3.x-blue?style=flat-square&logo=python)
