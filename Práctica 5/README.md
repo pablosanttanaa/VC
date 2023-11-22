@@ -20,35 +20,35 @@ Para facilitar la consecución de este propósito, se proporciona un modelo de d
 <p>&nbsp;</p>
 
 <div align="center">
-    <img src="./Readme%20Images/1.jpg">
+    <img src="./P5/Readme Images/1.jpg">
 </div>
 
 <div align="center">
-    <img src="./Readme%20Images/2.jpg">
+    <img src="./P5/Readme Images/2.jpg">
 </div>
 
 <div align="center">
-    <img src="./Readme%20Images/3.jpg">
+    <img src="./P5/Readme Images/3.jpg">
 </div>
 
 <div align="center">
-    <img src="./Readme%20Images/4.jpg">
+    <img src="./P5/Readme Images/4.jpg">
 </div>
 
 <div align="center">
-    <img src="./Readme%20Images/5.jpg">
+    <img src="./P5/Readme Images/5.jpg">
 </div>
 
 <div align="center">
-    <img src="./Readme%20Images/6.jpg">
+    <img src="./P5/Readme Images/6.jpg">
 </div>
 
 <div align="center">
-    <img src="./Readme%20Images/7.jpg">
+    <img src="./P5/Readme Images/7.jpg">
 </div>
 
 <div align="center">
-    <img src="./Readme%20Images/8.jpg">
+    <img src="./P5/Readme Images/8.jpg">
 </div>
 
 ## Segundo detector
