@@ -20,41 +20,54 @@ Para facilitar la consecución de este propósito, se proporciona un modelo de d
 <p>&nbsp;</p>
 
 <div align="center">
-    <img src="./P5/Readme Images/1.jpg">
+    <a href="./P5/Readme Images/1.jpg">
+        <img src="./P5/Readme Images/1_thumb.jpg" alt="Imagen 1">
+    </a>
 </div>
 
 <div align="center">
-    <img src="./P5/Readme Images/2.jpg">
+    <a href="./P5/Readme Images/2.jpg">
+        <img src="./P5/Readme Images/2_thumb.jpg" alt="Imagen 2">
+    </a>
 </div>
 
 <div align="center">
-    <img src="./P5/Readme Images/3.jpg">
+    <a href="./P5/Readme Images/3.jpg">
+        <img src="./P5/Readme Images/3_thumb.jpg" alt="Imagen 3">
+    </a>
 </div>
 
 <div align="center">
-    <img src="./P5/Readme Images/4.jpg">
+    <a href="./P5/Readme Images/4.jpg">
+        <img src="./P5/Readme Images/4_thumb.jpg" alt="Imagen 4">
+    </a>
 </div>
 
 <div align="center">
-    <img src="./P5/Readme Images/5.jpg">
+    <a href="./P5/Readme Images/5.jpg">
+        <img src="./P5/Readme Images/5_thumb.jpg" alt="Imagen 5">
+    </a>
 </div>
 
 <div align="center">
-    <img src="./P5/Readme Images/6.jpg">
+    <a href="./P5/Readme Images/6.jpg">
+        <img src="./P5/Readme Images/6_thumb.jpg" alt="Imagen 6">
+    </a>
 </div>
 
 <div align="center">
-    <img src="./P5/Readme Images/7.jpg">
+    <a href="./P5/Readme Images/7.jpg">
+        <img src="./P5/Readme Images/7_thumb.jpg" alt="Imagen 7">
+    </a>
 </div>
 
 <div align="center">
-    <img src="./P5/Readme Images/8.jpg">
+    <a href="./P5/Readme Images/8.jpg">
+        <img src="./P5/Readme Images/8_thumb.jpg" alt="Imagen 8">
+    </a>
 </div>
 
 ## Segundo detector
-
-
-
 
 
 ## Tecnologias
