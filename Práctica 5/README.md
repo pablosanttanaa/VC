@@ -24,9 +24,9 @@ Para facilitar la consecución de este propósito, se proporciona un modelo de d
 
 
 ## Tecnologias
-  -  Python: ![Python](https://img.shields.io/badge/Python-3.x-blue?style=flat-square&logo=python)
-  -  YOLOv8: ![YOLOv8](https://docs.ultralytics.com/quickstart/)
-  -  Tesseract: ![Tesseract](https://github.com/tesseract-ocr/tesseract)
+  -  [Python](https://img.shields.io/badge/Python-3.x-blue?style=flat-square&logo=python)
+  -  [YOLOv8](https://docs.ultralytics.com/quickstart/)
+  -  [Tesseract](https://github.com/tesseract-ocr/tesseract)
 ## Librerias 
-  - OpenCV: ![OpenCV](https://img.shields.io/badge/OpenCV-Latest-brightgreen?style=flat-square&logo=opencv)
-  - Pytesseract: ![Pytesseract](https://pypi.org/project/pytesseract/)
+  - [OpenCV](https://img.shields.io/badge/OpenCV-Latest-brightgreen?style=flat-square&logo=opencv)
+  - [Pytesseract](https://pypi.org/project/pytesseract/)
