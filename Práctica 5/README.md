@@ -72,9 +72,9 @@ A continuación se adjuntan las figuras del proceso descrito:
 
 ## Segundo detector
 
-- **Paso 1. Elegimos el Dataset**: Elegimos el dataset de [Roboflow Dataset](https://universe.roboflow.com/itrc/plate-detection-y5). Modificamos el Dataset las carpetas para tener la estructura correcta.
-- **Paso 2. Creamos el fichero plates.yaml**: Nos creamos el fichero con el directorio de nuestro Dataset, número de clase que en nuestro caso solo es una porque es de matrícula y por último el nombre de la clase.
-- **Paso 3. Entrenamiento**: Para entrenar utilizaremos el siguiente comando:
+- **Paso 1. Elegimos el Dataset**: Elegimos el dataset de [Roboflow Dataset](https://universe.roboflow.com/itrc/plate-detection-y5). Modificamos las carpetas del Dataset para tener la estructura correcta.
+- **Paso 2. Creamos el archivo plates.yaml**: Creamos el archivo con el directorio de nuestro Dataset, el número de clases (en nuestro caso solo es uno, ya que es de matrículas) y, por último, el nombre de la clase.
+- **Paso 3. Entrenamiento**: Para entrenar, utilizaremos el siguiente comando:
 
 ```
 yolo detect train model=yolov8n.pt data=plates.yaml imgsz=640 batch=4 device=CPU epochs=40
@@ -88,7 +88,7 @@ yolo detect train model=yolov8n.pt data=plates.yaml imgsz=640 batch=4 device=CPU
     </div>
 </div>
 
-- **Paso 4. Detectar matrículas**: Para finalizar, solo quedaría utilizar "matricula.pt" en nuestro segundo detector. El segundo detector obtenemos el box que representa la matrícula, marcamos la matrícula del coche y extraemos la matrícula 
+- **Paso 4. Detectar matrículas**: Para finalizar, solo queda utilizar "matricula.pt" en nuestro segundo detector. El segundo detector obtiene la caja que representa la matrícula, marcamos la matrícula del coche y extraemos la matrícula.
 
 <div align="center">
     <div>
@@ -105,7 +105,6 @@ yolo detect train model=yolov8n.pt data=plates.yaml imgsz=640 batch=4 device=CPU
     </div>
 </div>
  
-
 ## Tecnologias
   -  [Python](https://img.shields.io/badge/Python-3.x-blue?style=flat-square&logo=python)
   -  [YOLOv8](https://docs.ultralytics.com/quickstart/)
