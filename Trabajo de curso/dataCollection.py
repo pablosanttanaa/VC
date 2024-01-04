@@ -2,7 +2,6 @@ import cv2
 from cvzone.HandTrackingModule import HandDetector
 import numpy as np
 import math
-import os
 import time
 
 # Inicializar la cámara y el detector de manos
@@ -13,7 +12,7 @@ detector = HandDetector(maxHands=1)  # Definimos el número máximo de manos
 offset = 20  # Margen alrededor de la mano al recortar la imagen
 imgSize = 300  # Tamaño deseado para la imagen recortada y redimensionada
 
-folder = "C:/Users/Lenovo/VC/VC/Trabajo de curso/Data/A"
+folder = "C:/Users/Lenovo/Desktop/Data/Y"
 counter = 0
 
 while True:
@@ -27,7 +26,7 @@ while True:
     cv2.imshow("Image", img)
 
     if hands:
-        # Tomar la información de la primera mano detectadassssssssssssssssss
+        # Tomar la información de la primera mano detectadas
         hand = hands[0]
         x, y, w, h = hand['bbox']
         
@@ -74,6 +73,7 @@ while True:
         
     key = cv2.waitKey(1)
     
+    # Se espera a que se pulse la tecla "S" para sacar una captura de la posición de la mano
     if key == ord("s"):
         counter += 1
         cv2.imwrite(f'{folder}/Image_{time.time()}.jpg', imgWhite)

@@ -17,26 +17,22 @@ offset = 20  # Margen alrededor de la mano al recortar la imagen
 imgSize = 300  # Tamaño deseado para la imagen recortada y redimensionada
 
 folder = "C:/Users/Lenovo/Desktop/Data/Y"
-counter = 0
 
-label = [
-    "A", "B", "C", "D", "E", "F"
-    "G", "H", "I", "J", "K", "L"
-    "M", "N", "O", "P", "Q", "R"
-    "S", "T", "U", "V", "W", "X"
-    "Y", "Z"
-    ]
+label = ["A", "B", "C", "D", "E", "F",
+        "G", "H", "I", "J", "K", "L",
+        "M", "N", "O", "P", "Q", "R",
+        "S", "T", "U", "V", "W", "X",
+        "Y"]
 
 while True:
     # Capturar el fotograma actual de la cámara
     success, img = cap.read()
+    
+    imgOutput = img.copy()
 
     # Detectar manos en la imagen
     hands, img = detector.findHands(img)
     
-    # Visualizar la imagen original
-    cv2.imshow("Image", img)
-
     if hands:
         # Tomar la información de la primera mano detectadas
         hand = hands[0]
@@ -66,11 +62,11 @@ while True:
             wGap = int(wGap)
             wCal = int(wCal)
             imgWhite[:, wGap:wCal + wGap] = imgResize
-            prediction, index = classifier.getPrediction(img)
+            prediction, index = classifier.getPrediction(imgWhite)
             print(prediction, index)
-            
+                 
         else:
-            # Si la mposición de la mano es más ancha que alta 
+            # Si la posición de la mano es más ancha que alta 
             k = imgSize / w
             hCal = math.ceil(k * h)
             imgResize = cv2.resize(imgCrop, (imgSize, hCal))
@@ -78,13 +74,16 @@ while True:
             hGap = int(math.ceil((imgSize - hCal) / 2))
             
             # Convertir a enteros y asignar la región redimensionada a la imagen blanca
-            #hGap = int(hGap)
             imgWhite[hGap:hCal + hGap, :] = imgResize
+            
+            prediction, index = classifier.getPrediction(imgWhite)
 
-        # Visualizar la imagen recortada y la imagen blanca
-        cv2.imshow("ImageCrop", imgCrop)
-        cv2.imshow("ImageWhite", imgWhite)
-
+        cv2.putText(imgOutput, label[index], (x,y-20), cv2.FONT_HERSHEY_COMPLEX,2,(255,0,255),2)
+        cv2.rectangle(imgOutput,(x,y),(x+w, y+h), (255,0,255), 4)
+        
+    # Visualizar la imagen original
+    cv2.imshow("Image", imgOutput)
+    
     # Espera la tecla 'q' para cerrar la cámara
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
