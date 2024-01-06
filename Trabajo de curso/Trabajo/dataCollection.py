@@ -5,22 +5,22 @@ import math
 import time
 
 # Inicializar la cámara y el detector de manos
-cap = cv2.VideoCapture(0)
-detector = HandDetector(maxHands=1)  # Definimos el número máximo de manos
+camera = cv2.VideoCapture(0)
+hand_detector = HandDetector(maxHands=1)  # Definimos el número máximo de manos
 
 # Configuración de parámetros
 offset = 20  # Margen alrededor de la mano al recortar la imagen
 imgSize = 300  # Tamaño deseado para la imagen recortada y redimensionada
 
-folder = "C:/Users/Lenovo/Desktop/Data/Y"
+folder = "C:/Direccion/Para/Guardar/Fotos/Dataset"
 counter = 0
 
 while True:
     # Capturar el fotograma actual de la cámara
-    success, img = cap.read()
+    success, img = camera.read()
 
     # Detectar manos en la imagen
-    hands, img = detector.findHands(img)
+    hands, img = hand_detector.findHands(img)
     
     # Visualizar la imagen original
     cv2.imshow("Image", img)
@@ -64,12 +64,12 @@ while True:
             hGap = int(math.ceil((imgSize - hCal) / 2))
             
             # Convertir a enteros y asignar la región redimensionada a la imagen blanca
-            #hGap = int(hGap)
             imgWhite[hGap:hCal + hGap, :] = imgResize
 
         # Visualizar la imagen recortada y la imagen blanca
         cv2.imshow("ImageCrop", imgCrop)
         cv2.imshow("ImageWhite", imgWhite)
+       
         
     key = cv2.waitKey(1)
     
@@ -84,5 +84,5 @@ while True:
         break
 
 # Liberar la cámara y cerrar la ventana
-cap.release()
+camera.release()
 cv2.destroyAllWindows()

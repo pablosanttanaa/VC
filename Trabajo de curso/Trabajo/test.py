@@ -6,8 +6,8 @@ from cvzone.ClassificationModule import Classifier
 
 
 # Inicializar la cámara y el detector de manos
-cap = cv2.VideoCapture(0)
-detector = HandDetector(maxHands=1)  # Definimos el número máximo de manos
+camera = cv2.VideoCapture(0)
+hand_detector = HandDetector(maxHands=1)  # Definimos el número máximo de manos
 classifier = Classifier("Trabajo de curso/Model/keras_model.h5", 
                         "Trabajo de curso/Model/labels.txt")
 
@@ -16,8 +16,7 @@ classifier = Classifier("Trabajo de curso/Model/keras_model.h5",
 offset = 20  # Margen alrededor de la mano al recortar la imagen
 imgSize = 300  # Tamaño deseado para la imagen recortada y redimensionada
 
-folder = "C:/Users/Lenovo/Desktop/Data/Y"
-
+# Posibles clases dentro del Modelo
 label = ["A", "B", "C", "D", "E", "F",
         "G", "H", "I", "J", "K", "L",
         "M", "N", "O", "P", "Q", "R",
@@ -26,12 +25,12 @@ label = ["A", "B", "C", "D", "E", "F",
 
 while True:
     # Capturar el fotograma actual de la cámara
-    success, img = cap.read()
+    success, img = camera.read()
     
     imgOutput = img.copy()
 
     # Detectar manos en la imagen
-    hands, img = detector.findHands(img)
+    hands, img = hand_detector.findHands(img)
     
     if hands:
         # Tomar la información de la primera mano detectadas
@@ -89,5 +88,5 @@ while True:
         break
 
 # Liberar la cámara y cerrar la ventana
-cap.release()
+camera.release()
 cv2.destroyAllWindows()
