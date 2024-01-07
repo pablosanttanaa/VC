@@ -1,6 +1,18 @@
 ## Práctica 7. Trabajo de curso
 
 Este repositorio contiene código en Python para el reconocimiento de gestos manuales utilizando la biblioteca OpenCV y el módulo cvzone. El sistema está diseñado para detectar gestos manuales en tiempo real a través de una cámara web y capturar imágenes de posturas específicas de las manos para entrenar un modelo de clasificación de gestos. 
+
+## Motivación
+
+Este proyecto surge con la idea de hacer algo útil para la sociedad. Queríamos echar una mano a quienes más lo necesitan, facilitar la vida de aquellos que enfrentan desafíos, como, por ejemplo, comunicarse.
+
+La idea es que, a raíz de nuestro trabajo, se pueda utilizar o brindar ideas para desarrollar aplicaciones que faciliten la comunicación o el entendimiento de las personas con discapacidad auditiva o sordas que necesitan comunicarse con lenguaje de signos.
+
+En resumen, la motivación que tuvimos es la necesidad de que todo el mundo pueda utilizar fácilmente las tecnologías y comunicarse entre sí, sin marginar a nadie.
+
+## Objetivo
+
+El objetivo de este trabajo consiste en diseñar un sistema de detección de gestos manuales en tiempo real mediante una cámara web y capturar imágenes de posturas específicas de las manos para entrenar un modelo de clasificación de gestos.
  
  ## Contenido
 
@@ -79,6 +91,30 @@ Este repositorio contiene código en Python para el reconocimiento de gestos man
         </a>
     </div>
 </div>
+
+## Conclusión
+
+Conclusión:
+
+En resumen, hemos desarrollado una herramienta que no solo identifica movimientos de manos, sino que también busca promover la inclusión y accesibilidad tecnológica.
+
+La motivación que impulsó este proyecto fue clara: queríamos crear algo beneficioso para la sociedad, especialmente para aquellos que enfrentan desafíos en su comunicación diaria. La idea de contribuir a la creación de aplicaciones que mejoren la calidad de vida de personas con discapacidad auditiva o sordas, facilitándoles la comunicación a través del lenguaje de signos, fue el motor detrás de nuestro esfuerzo.
+
+Creemos que la accesibilidad a la tecnología debería ser un derecho universal, y este proyecto representa un modesto avance hacia ese ideal.
+
+## Propuestas Adicionales
+
+1. Interfaz de Modificación de Letras
+
+Podríamos desarrollar una interfaz interactiva que permita al usuario no solo visualizar las letras detectadas, sino también editarlas según sea necesario, además de mostrar la frase completa. Esto ofrecería una forma más flexible y precisa de comunicarse utilizando gestos.
+
+2. Integración en redes sociales
+
+Integración de la herramienta en redes sociales para facilitar la comunicación en tiempo real. Esto podría incluir traducción automática de gestos a texto o incluso la posibilidad de enviar mensajes de video basados en los gestos capturados.
+
+3. Entrenamiento Personalizado
+
+Implementar un sistema de entrenamiento personalizado que permita a los usuarios adaptar la herramienta a sus gestos individuales, mejorando la precisión y la personalización de la experiencia.
 
 
 ## Tecnologias
