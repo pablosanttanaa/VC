@@ -4,15 +4,15 @@ Este repositorio contiene código en Python para el reconocimiento de gestos man
 
 ## Motivación
 
-Este proyecto surge con la idea de hacer algo útil para la sociedad. Queríamos echar una mano a quienes más lo necesitan, facilitar la vida de aquellos que enfrentan desafíos, como, por ejemplo, comunicarse.
+Este proyecto se origina con la firme intención de brindar un aporte valioso a la sociedad, especialmente en favor de aquellos individuos que enfrentan desafíos en la comunicación, como es el caso de las personas con discapacidad auditiva o sordera. En este sentido, la herramienta desarrollada no solo busca asistir a quienes requieren comunicarse en lenguaje de signos, sino también servir como una valiosa herramienta de aprendizaje para aquellos que deseen adquirir habilidades en este sistema de expresión.
 
-La idea es que, a raíz de nuestro trabajo, se pueda utilizar o brindar ideas para desarrollar aplicaciones que faciliten la comunicación o el entendimiento de las personas con discapacidad auditiva o sordas que necesitan comunicarse con lenguaje de signos.
+La aplicación no solo cumple una función asistencial al facilitar la comunicación para aquellos que enfrentan limitaciones auditivas, sino que también se presenta como una plataforma educativa. Su utilidad se extiende a aquellos individuos que desean aprender el abecedario en lenguaje de signos, proporcionando una experiencia interactiva y didáctica para adquirir estas habilidades comunicativas específicas.
 
-En resumen, la motivación que tuvimos es la necesidad de que todo el mundo pueda utilizar fácilmente las tecnologías y comunicarse entre sí, sin marginar a nadie.
+En resumen, la motivación subyacente en este proyecto es abordar la necesidad de facilitar la comunicación para personas con discapacidad auditiva, al mismo tiempo que se ofrece una herramienta educativa para aquellos que buscan aprender y comprender el abecedario en lenguaje de signos. Este enfoque amplio refleja el compromiso de la iniciativa con la inclusión y la accesibilidad universal.
 
 ## Objetivo
 
-El objetivo de este trabajo consiste en diseñar un sistema de detección de gestos manuales en tiempo real mediante una cámara web y capturar imágenes de posturas específicas de las manos para entrenar un modelo de clasificación de gestos.
+El objetivo de este trabajo consiste en diseñar un sistema de detección de gestos manuales en tiempo real mediante una cámara web y capturar imágenes de posturas específicas de las manos para la clasificación de gestos.
  
  ## Contenido
 
@@ -29,7 +29,7 @@ El objetivo de este trabajo consiste en diseñar un sistema de detección de ges
 
 - **/Trabajo de curso/Model/labels.txt:** Archivo de texto que contiene las etiquetas correspondientes a los gestos manuales.
 
-- **/C:/Users/Lenovo/Desktop/Data/Y:** Carpeta predeterminada para guardar las imágenes de posturas de manos capturadas. Puedes modificar la variable 'folder' en ambos scripts para cambiar la ubicación de almacenamiento.
+- **/C:/Users/Lenovo/Desktop/Data/Y:** Carpeta predeterminada para guardar las imágenes de posturas de manos capturadas (en este caso, para guardar las imágenes del gesto que representan la letras 'Y'). Puedes modificar la variable 'folder' en ambos scripts para cambiar la ubicación de almacenamiento.
 
  ## Uso
  - **1. dataCollection.py:**
@@ -94,32 +94,37 @@ El objetivo de este trabajo consiste en diseñar un sistema de detección de ges
 
 ## Conclusión
 
-Conclusión:
+En síntesis, hemos concebido una herramienta que no solo detecta los gestos manuales, sino que también busca fomentar la inclusión y la accesibilidad tecnológica.
 
-En resumen, hemos desarrollado una herramienta que no solo identifica movimientos de manos, sino que también busca promover la inclusión y accesibilidad tecnológica.
+La motivación subyacente que impulsó este proyecto fue clara y definida: nuestra aspiración era desarrollar una solución beneficiosa para la sociedad, especialmente dirigida a aquellos individuos que enfrentan desafíos en su comunicación cotidiana. La noción de contribuir a la creación de aplicaciones destinadas a mejorar la calidad de vida de las personas con discapacidad auditiva o sordera, facilitando su comunicación mediante el lenguaje de signos, constituyó el motor impulsor detrás de nuestro compromiso.
 
-La motivación que impulsó este proyecto fue clara: queríamos crear algo beneficioso para la sociedad, especialmente para aquellos que enfrentan desafíos en su comunicación diaria. La idea de contribuir a la creación de aplicaciones que mejoren la calidad de vida de personas con discapacidad auditiva o sordas, facilitándoles la comunicación a través del lenguaje de signos, fue el motor detrás de nuestro esfuerzo.
-
-Creemos que la accesibilidad a la tecnología debería ser un derecho universal, y este proyecto representa un modesto avance hacia ese ideal.
+Sostenemos la convicción de que el acceso a la tecnología debería ser un derecho universal, y este proyecto representa un modesto avance hacia la concreción de ese ideal.
 
 ## Propuestas Adicionales
 
-1. Interfaz de Modificación de Letras
+1. Detección de palabras específicas
 
-Podríamos desarrollar una interfaz interactiva que permita al usuario no solo visualizar las letras detectadas, sino también editarlas según sea necesario, además de mostrar la frase completa. Esto ofrecería una forma más flexible y precisa de comunicarse utilizando gestos.
+Ampliar la funcionalidad para detectar palabras específicas o comandos, lo que permitiría realizar acciones específicas al reconocer ciertos gestos.
 
-2. Integración en redes sociales
+2. Compatibilidad con otros idiomas
 
-Integración de la herramienta en redes sociales para facilitar la comunicación en tiempo real. Esto podría incluir traducción automática de gestos a texto o incluso la posibilidad de enviar mensajes de video basados en los gestos capturados.
+Adaptar el modelo para reconocer gestos asociados con el lenguaje de señas de diferentes idiomas, ampliando así su utilidad y alcance cultural.
 
-3. Entrenamiento Personalizado
+3. Alertas de confianza
 
-Implementar un sistema de entrenamiento personalizado que permita a los usuarios adaptar la herramienta a sus gestos individuales, mejorando la precisión y la personalización de la experiencia.
+Implementar alertas visuales o auditivas cuando el modelo tenga baja confianza en la clasificación de un gesto, indicando al usuario que puede necesitar repetir el gesto de manera más clara.
+
+## Bibliografía
+
+- [Sign language detection with Python and Scikit Learn](https://youtu.be/MJCSjXepaAM?si=vATFcch069Fc9CAU)
+- [Real-Time Hand Gesture Recognition with Mediapipe and Tensorflow](https://youtu.be/0W4nRBPu1hQ?si=W3q77MiM0QZXtXIP)
 
 
 ## Tecnologias
-  -  [Python](https://img.shields.io/badge/Python-3.x-blue?style=flat-square&logo=python)
+  - [Python](https://img.shields.io/badge/Python-3.x-blue?style=flat-square&logo=python)
   - [TensorFlow](https://www.tensorflow.org/?hl=es-419)
+  - [@python.hub](https://www.instagram.com/p/C1RG_jarISG/)
+
 
 ## Librerias 
 - [cvzone](https://pypi.org/project/cvzone/)

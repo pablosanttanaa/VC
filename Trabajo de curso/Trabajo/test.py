@@ -90,3 +90,5 @@ while True:
 # Liberar la cámara y cerrar la ventana
 camera.release()
 cv2.destroyAllWindows()
+
+
