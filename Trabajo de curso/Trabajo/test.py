@@ -7,14 +7,14 @@ from cvzone.ClassificationModule import Classifier
 
 # Inicializar la cámara y el detector de manos
 camera = cv2.VideoCapture(0)
-hand_detector = HandDetector(maxHands=1)  # Definimos el número máximo de manos
+detector_mano = HandDetector(maxHands=1)  # Definimos el número máximo de manos
 classifier = Classifier("Trabajo de curso/Model/keras_model.h5", 
                         "Trabajo de curso/Model/labels.txt")
 
 
 # Configuración de parámetros
-offset = 20  # Margen alrededor de la mano al recortar la imagen
-imgSize = 300  # Tamaño deseado para la imagen recortada y redimensionada
+margen_recorte = 20  # Margen alrededor de la mano al recortar la imagen
+new_size = 300  # Tamaño deseado para la imagen recortada y redimensionada
 
 # Posibles clases dentro del Modelo
 label = ["A", "B", "C", "D", "E", "F",
@@ -25,57 +25,55 @@ label = ["A", "B", "C", "D", "E", "F",
 
 while True:
     # Capturar el fotograma actual de la cámara
-    success, img = camera.read()
+    success, imagen = camera.read()
     
     imgOutput = img.copy()
 
     # Detectar manos en la imagen
-    hands, img = hand_detector.findHands(img)
+    manos, img = detector_mano.findHands(img)
     
-    if hands:
+    if manos:
         # Tomar la información de la primera mano detectadas
-        hand = hands[0]
-        x, y, w, h = hand['bbox']
+        mano = manos[0]
+        x, y, w, h = mano['bbox']
         
         # Crear una imagen blanca del tamaño deseado
-        imgWhite = np.ones((imgSize, imgSize, 3), np.uint8) * 255
+        imagen_blanca = np.ones((new_size, new_size, 3), np.uint8) * 255
 
         # Recortar la región de la mano de la imagen original
-        imgCrop = img[y - offset:y + h + offset, x - offset:x + w + offset]
+        region_mano_recortada = imagen[y - margen_recorte:y + h + margen_recorte, x - margen_recorte:x + w + margen_recorte]
         
         # Obtener la forma de la región recortada
-        imgCropShape = imgCrop.shape
+        forma_region_recortada = region_mano_recortada.shape
         
         # Calcular la relación de aspecto de la mano
-        aspectRatio = h / w
+        relacion_aspecto = h / w
         
-        if aspectRatio > 1:
+        if relacion_aspecto > 1:
             # Si la posición de la mano es más alta que ancha
-            k = imgSize / h
-            wCal = math.ceil(k * w)
-            imgResize = cv2.resize(imgCrop, (wCal, imgSize))
-            imgResizeShape = imgResize.shape
-            wGap = int(math.ceil((imgSize - wCal) / 2))
+            factor_redimension = new_size / h
+            ancho_calculado = math.ceil(factor_redimension * w)
+            region_redimensionada = cv2.resize(region_mano_recortada, (ancho_calculado, new_size))
+            forma_redimensionada = region_redimensionada.shape
+            brecha_ancho = int(math.ceil((new_size - ancho_calculado) / 2))
             
             # Convertir a enteros y asignar la región redimensionada a la imagen blanca
-            wGap = int(wGap)
-            wCal = int(wCal)
-            imgWhite[:, wGap:wCal + wGap] = imgResize
-            prediction, index = classifier.getPrediction(imgWhite)
-            print(prediction, index)
-                 
+            brecha_ancho = int(brecha_ancho)
+            ancho_calculado = int(ancho_calculado)
+            imagen_blanca[:, brecha_ancho:ancho_calculado + brecha_ancho] = region_redimensionada
+            
         else:
             # Si la posición de la mano es más ancha que alta 
-            k = imgSize / w
-            hCal = math.ceil(k * h)
-            imgResize = cv2.resize(imgCrop, (imgSize, hCal))
-            imgResizeShape = imgResize.shape
-            hGap = int(math.ceil((imgSize - hCal) / 2))
+            factor_redimension = new_size / w
+            alto_calculado = math.ceil(factor_redimension * h)
+            region_redimensionada = cv2.resize(region_mano_recortada, (new_size, alto_calculado))
+            forma_redimensionada = region_redimensionada.shape
+            brecha_alto = int(math.ceil((new_size - alto_calculado) / 2))
             
             # Convertir a enteros y asignar la región redimensionada a la imagen blanca
-            imgWhite[hGap:hCal + hGap, :] = imgResize
+            imagen_blanca[brecha_alto:alto_calculado + brecha_alto, :] = region_redimensionada
             
-            prediction, index = classifier.getPrediction(imgWhite)
+            prediction, index = classifier.getPrediction(imagen_blanca)
 
         cv2.putText(imgOutput, label[index], (x,y-20), cv2.FONT_HERSHEY_COMPLEX,2,(255,0,255),2)
         cv2.rectangle(imgOutput,(x,y),(x+w, y+h), (255,0,255), 4)

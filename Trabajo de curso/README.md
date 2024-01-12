@@ -1,6 +1,19 @@
-## Práctica 7. Trabajo de curso
+## Trabajo de Curso: Detector de lenguaje de signos
 
 Este repositorio contiene código en Python para el reconocimiento de gestos manuales utilizando la biblioteca OpenCV y el módulo cvzone. El sistema está diseñado para detectar gestos manuales en tiempo real a través de una cámara web y capturar imágenes de posturas específicas de las manos para entrenar un modelo de clasificación de gestos. 
+
+<div align="center">
+    <!-- Fila 1 -->
+    <div>
+        <a href="./Imagenes/caratula.png" target="_blank">
+            <img src="./Imagenes/caratula.png" alt="Imagen 1" width="800">
+        </a>
+    </div>
+</div>
+
+## Autores
+[![GitHub](https://img.shields.io/badge/GitHub-Ana%20del%20Carmen%20Santana%20Ojeda-red?style=flat-square&logo=github)](https://github.com/AnaSantana016)
+[![GitHub](https://img.shields.io/badge/GitHub-Pablo%20Santana-blue?style=flat-square&logo=github)](https://github.com/pablosanttanaa)
 
 ## Motivación
 
@@ -20,9 +33,6 @@ El objetivo de este trabajo consiste en diseñar un sistema de detección de ges
 
 - **test.py**: Este script utiliza el modelo entrenado para realizar el reconocimiento de gestos manuales en tiempo real. Captura posturas de manos, preprocesa las imágenes y predice los gestos correspondientes utilizando un modelo de clasificación preentrenado.
 
-## Autores
-[![GitHub](https://img.shields.io/badge/GitHub-Ana%20del%20Carmen%20Santana%20Ojeda-red?style=flat-square&logo=github)](https://github.com/AnaSantana016)
-[![GitHub](https://img.shields.io/badge/GitHub-Pablo%20Santana-blue?style=flat-square&logo=github)](https://github.com/pablosanttanaa)
 
  ## Estructura de archivos:
  - **/Trabajo de curso/Model/keras_model.h5:** Modelo preentrenado de Keras para la clasificación de gestos manuales.
@@ -92,13 +102,9 @@ El objetivo de este trabajo consiste en diseñar un sistema de detección de ges
     </div>
 </div>
 
-## Conclusión
+## Aspectos a mejorar
 
-En síntesis, hemos concebido una herramienta que no solo detecta los gestos manuales, sino que también busca fomentar la inclusión y la accesibilidad tecnológica.
-
-La motivación subyacente que impulsó este proyecto fue clara y definida: nuestra aspiración era desarrollar una solución beneficiosa para la sociedad, especialmente dirigida a aquellos individuos que enfrentan desafíos en su comunicación cotidiana. La noción de contribuir a la creación de aplicaciones destinadas a mejorar la calidad de vida de las personas con discapacidad auditiva o sordera, facilitando su comunicación mediante el lenguaje de signos, constituyó el motor impulsor detrás de nuestro compromiso.
-
-Sostenemos la convicción de que el acceso a la tecnología debería ser un derecho universal, y este proyecto representa un modesto avance hacia la concreción de ese ideal.
+Una de las áreas identificadas para mejorar en este proyecto es el entrenamiento del modelo de clasificación. La precisión del modelo puede verse afectada por condiciones variables de iluminación en el entorno. En situaciones donde la iluminación es baja o cambia significativamente, es posible que algunas letras se confundan, lo que podría afectar la precisión de las predicciones. 
 
 ## Propuestas Adicionales
 
@@ -114,20 +120,23 @@ Adaptar el modelo para reconocer gestos asociados con el lenguaje de señas de d
 
 Implementar alertas visuales o auditivas cuando el modelo tenga baja confianza en la clasificación de un gesto, indicando al usuario que puede necesitar repetir el gesto de manera más clara.
 
-## Bibliografía
+## Conclusión
 
-- [Sign language detection with Python and Scikit Learn](https://youtu.be/MJCSjXepaAM?si=vATFcch069Fc9CAU)
-- [Real-Time Hand Gesture Recognition with Mediapipe and Tensorflow](https://youtu.be/0W4nRBPu1hQ?si=W3q77MiM0QZXtXIP)
+En síntesis, hemos concebido una herramienta que no solo detecta los gestos manuales, sino que también busca fomentar la inclusión y la accesibilidad tecnológica.
 
+Sostenemos la convicción de que el acceso a la tecnología debería ser un derecho universal, y este proyecto representa un modesto avance hacia la concreción de ese ideal.
 
-## Tecnologias
+## Tecnologías
   - [Python](https://img.shields.io/badge/Python-3.x-blue?style=flat-square&logo=python)
   - [TensorFlow](https://www.tensorflow.org/?hl=es-419)
-  - [@python.hub](https://www.instagram.com/p/C1RG_jarISG/)
 
-
-## Librerias 
+## Librerías 
 - [cvzone](https://pypi.org/project/cvzone/)
 - [NumPy](https://numpy.org/)
 - [Math](https://docs.python.org/3/library/math.html)
 - [Time](https://docs.python.org/es/3/library/time.html)
+
+## Bibliografía 
+- [Sign language detection with Python and Scikit Learn](https://youtu.be/MJCSjXepaAM?si=vATFcch069Fc9CAU)
+- [Real-Time Hand Gesture Recognition with Mediapipe and Tensorflow](https://youtu.be/0W4nRBPu1hQ?si=W3q77MiM0QZXtXIP)
+- [@python.hub](https://www.instagram.com/p/C1RG_jarISG/)
