@@ -25,7 +25,7 @@ label = ["A", "B", "C", "D", "E", "F",
 
 while True:
     # Capturar el fotograma actual de la cámara
-    success, imagen = camera.read()
+    success, img = camera.read()
     
     imgOutput = img.copy()
 
@@ -41,7 +41,7 @@ while True:
         imagen_blanca = np.ones((new_size, new_size, 3), np.uint8) * 255
 
         # Recortar la región de la mano de la imagen original
-        region_mano_recortada = imagen[y - margen_recorte:y + h + margen_recorte, x - margen_recorte:x + w + margen_recorte]
+        region_mano_recortada = img[y - margen_recorte:y + h + margen_recorte, x - margen_recorte:x + w + margen_recorte]
         
         # Obtener la forma de la región recortada
         forma_region_recortada = region_mano_recortada.shape

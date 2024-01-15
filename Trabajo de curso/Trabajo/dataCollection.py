@@ -12,7 +12,7 @@ detector_mano = HandDetector(maxHands=1)  # Definimos el número máximo de mano
 margen_recorte = 20  # Margen alrededor de la mano al recortar la imagen
 new_size = 300  # Tamaño deseado para la imagen recortada y redimensionada
 
-directorio_guardado = "C:/Direccion/Para/Guardar/Fotos/Dataset"
+directorio_guardado = "C:/Users/Lenovo/Desktop/Prueba"
 contador = 0
 
 while True:
